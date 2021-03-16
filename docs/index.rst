@@ -1,4 +1,3 @@
-
 .. include:: ../README.rst
 
 Table of Contents
@@ -30,7 +29,7 @@ Table of Contents
 .. toctree::
     :caption: Other Links
 
-    Download <https://github.com/adafruit/Adafruit_CircuitPython_Styles/releases/latest>
+    Download <https://github.com/adafruit/adafruit_CircuitPython_Display_Text/releases/latest>
     CircuitPython Reference Documentation <https://circuitpython.readthedocs.io>
     CircuitPython Support Forum <https://forums.adafruit.com/viewforum.php?f=60>
     Discord Chat <https://adafru.it/discord>
