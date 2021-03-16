@@ -30,13 +30,7 @@ left_text = label.Label(
 main_group.append(left_text)
 
 # Create a style label
-right_text = label.Label(
-    FONT,
-    text=TEXT,
-    x=90,
-    y=50,
-    label_style="LightGreen8"
-)
+right_text = label.Label(FONT, text=TEXT, x=90, y=50, label_style="LightGreen8")
 main_group.append(right_text)
 display.show(main_group)
 
