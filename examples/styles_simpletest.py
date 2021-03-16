@@ -2,37 +2,18 @@
 # SPDX-License-Identifier: Unlicense
 
 """
-This example shows the use of library with a adafruit_display_text.label object
+This example shows the use of library with an adafruit_display_text.label object
 """
 
 import board
-import displayio
+import terminalio
 from adafruit_display_text import label
-from adafruit_bitmap_font import bitmap_font
 
-
-display = board.DISPLAY
-main_group = displayio.Group()
-
-# Font definition. You can choose any two fonts available in your system
-FONT = bitmap_font.load_font("LeagueSpartan-Bold-16.bdf")
-
-# Define our text to display
-TEXT = "HELLO"
-
-# Create a simple label
-left_text = label.Label(
-    FONT,
-    text=TEXT,
-    x=10,
-    y=50,
-)
-main_group.append(left_text)
-
-# Create a style label
-right_text = label.Label(FONT, text=TEXT, x=90, y=50, label_style="LightGreen8")
-main_group.append(right_text)
-display.show(main_group)
-
+text = "Hello world"
+text_area = label.Label(terminalio.FONT, text=text)
+text_area.x = 10
+text_area.y = 10
+text_area.label_style = "LightGreen8"
+board.DISPLAY.show(text_area)
 while True:
     pass
