@@ -3,11 +3,18 @@
 # SPDX-License-Identifier: MIT
 
 """
-Color helper functions and styles
+`adafruit_syles`
+=======================
 """
 
 
 def get_hex(color: str) -> int:
-    """Function to convert Color styles to HEX
-    :param str color: string representation of Hex color"""
+    """get_hex function
+    A helper to convert Color styles to HEX
+
+    :param str color: string representation of Hex color
+    :return: color
+    :rtype: int
+
+    """
     return int(color[1:], 16)
