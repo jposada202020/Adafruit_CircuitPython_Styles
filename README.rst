@@ -36,7 +36,7 @@ This is easily achieved by downloading
 or individual libraries can be installed using
 `circup <https://github.com/adafruit/circup>`_.
 
-.. This library helps you coonfigure your display widgets with an beautiful color style.
+.. This library helps you configure your display widgets with an beautiful color style.
 
 `Purchase one from the Adafruit shop <http://www.adafruit.com/products/>`_
 
@@ -73,23 +73,7 @@ To install in a virtual environment in your current project:
 Usage Example
 =============
 
-For a board with a built-in display.
-
-.. code:: python
-
-    import board
-    import terminalio
-    from adafruit_display_text import label
-
-    text = "Hello world"
-    text_area = label.Label(terminalio.FONT, text=text)
-    text_area.x = 10
-    text_area.y = 10
-    text_area.label_style = "LightGreen8"
-    board.DISPLAY.show(text_area)
-    while True:
-        pass
-
+See the examples directory for usage examples
 
 Contributing
 ============
