@@ -8,13 +8,19 @@
 """
 
 
-def get_hex(color: str) -> int:
-    """get_hex function
-    A helper to convert Color styles to HEX
-
-    :param str color: string representation of Hex color
-    :return: color
-    :rtype: int
-
+def apply_style(target, style):
     """
-    return int(color[1:], 16)
+    target: widget object
+    style: Style to apply
+    """
+    text_display = ["Label", "Bitmap_label"]
+    annotation_widget = ["Annotation"]
+
+    identifier = target.__class__.__name__
+    # print(identifier)
+
+    if identifier in text_display:
+        target.color = style["TEXT"]
+        target.background_color = style["BACKGROUND"]
+    elif identifier in annotation_widget:
+        target.text_color = style["TEXT"]
