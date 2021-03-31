@@ -4,8 +4,14 @@
 .. If your library file(s) are nested in a directory (e.g. /adafruit_foo/foo.py)
 .. use this format as the module name: "adafruit_foo.foo"
 
-styles
-======
+apply_style
+===========
+
+.. automodule:: adafruit_styles
+   :members:
+
+GetStyle
+========
 
 .. automodule:: adafruit_styles.styles
    :members:

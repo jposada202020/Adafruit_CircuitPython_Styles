@@ -5,7 +5,46 @@
 """
 Display Text style definitions. Based on the PySimpleGui styles used under the LGPL3+ license.
 """
-# pylint: disable=invalid-name
+# pylint: disable=invalid-name, too-few-public-methods
+
+
+class GetStyle:
+    """
+    GetStyle allow any library to use the colorset available.
+
+    **Quickstart: Importing and using GetStyle**
+
+    Here is one war of importing ``GetStyle`` class so you can use it as
+    the name ``colors`` and the color set ``BluePurple``:
+
+    .. code-block:: python
+
+        from adafruit_styles.style import GetStyle, BluePurple
+
+    Now you can create a color set using:
+
+    .. code-block:: python
+
+        colors = GetStyle('BluePurple')
+
+    all the four color attributes will be available in colors. This could be easily
+    accessed via:
+
+     .. code-block:: python
+
+        colors.text_color
+
+    Currently there are four attributes ``background_color``, ``text_color``, ``line_color`` and
+    ``border``
+
+    """
+
+    def __init__(self, color):
+        self.background = color["BACKGROUND"]
+        self.text_color = color["TEXT"]
+        self.border = color["BORDER"]
+        self.line_color = color["LINE_COLOR"]
+
 
 DarkAmber = {
     "BACKGROUND": 0x2C2825,
