@@ -25,7 +25,7 @@ class GetStyle:
 
     .. code-block:: python
 
-        colors = GetStyle('BluePurple')
+        colors = GetStyle(BluePurple)
 
     all the four color attributes will be available in colors. This could be easily
     accessed via:
