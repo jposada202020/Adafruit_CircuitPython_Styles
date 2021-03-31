@@ -15,5 +15,3 @@ GetStyle
 
 .. automodule:: adafruit_styles.styles
    :members:
-
-
