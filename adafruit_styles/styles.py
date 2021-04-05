@@ -204,7 +204,6 @@ DarkTanBlue = {
 NeutralBlue = {
     "BACKGROUND": 0x92AA9D,
     "TEXT": 0x000000,
-
     "BORDER": 0xFCFFF6,
     "LINE_BORDER": 0xD0DBBD,
 }
