@@ -9,12 +9,13 @@ import board
 import terminalio
 from adafruit_display_text import label
 from adafruit_styles import apply_style
+from adafruit_styles.styles import DarkBlue
 
 text = "Hello world"
 text_area = label.Label(terminalio.FONT, text=text)
 text_area.x = 10
 text_area.y = 10
-apply_style(text_area, "DarkBlue")
+apply_style(text_area, DarkBlue)
 board.DISPLAY.show(text_area)
 while True:
     pass
